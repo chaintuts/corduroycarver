@@ -33,7 +33,7 @@ def recover(diskpath, save, found):
             # Write the recovered image to disk
             with open(f"{save}/{num}.jpg", "wb") as rec:
                 rec.write(buf)
-            print("Wrote recovered file {num}.jpg to disk")
+            print(f"Wrote recovered file {num}.jpg to disk")
 
 # Search for files by signature
 def search(diskpath):
